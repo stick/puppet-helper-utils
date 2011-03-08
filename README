@@ -1,0 +1,22 @@
+Miscellaneous puppet utilities
+==============================
+
+Overview
+--------
+
+Tools for puppet
+
+### check-puppet-syntax
+This script will check puppet and erb syntax of either a glob of passed files or directories (will recurse) or if no options of specified recurse down the tree checking things as it goes.
+It assumes that manifest files end in .pp, and everything else that is a regular file is a erb file.  This behavior is useful in that you won't accidentially embed erb in a files/foo.conf file.
+
+### pre-commit
+git pre-commit hook to run syntax checks.
+This is useful for local repositories.
+
+### pre-receive
+git pre-receive hook to run syntax checks.
+This is useful for remote repositories.
+
+
+
